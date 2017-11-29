@@ -8,7 +8,9 @@ export default () => (
     </Head>
     <Header />
     <h1>Houdini CSS</h1>
+    <h3>Smooth corners</h3>
     <div className="smooth"></div>
+    <h3>Com hem-cirklar</h3>
     <div className="balls"></div>
 
     <style jsx>{`
