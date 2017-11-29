@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Header from '../components/header';
 
 export default () => (
-  <div>
+  <div className="index">
     <Head>
       <script src="static/main.js"></script>
     </Head>
@@ -12,6 +12,11 @@ export default () => (
     <div className="balls"></div>
 
     <style jsx>{`
+      .index {
+        background-image: url(static/houdini.jpg);
+        height: 100%;
+      }
+
       .smooth {
         background: linear-gradient(deeppink, orangered);
         -webkit-mask-image: paint(smooth-corners);
