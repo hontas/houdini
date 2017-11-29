@@ -1,57 +1,37 @@
-import Head from 'next/head'
 import Header from '../components/header';
 
 export default () => (
   <div className="index">
-    <Head>
-      <script src="static/main.js"></script>
-    </Head>
     <Header />
-    <h1>Houdini CSS</h1>
-    <h3>Smooth corners</h3>
-    <div className="smooth"></div>
-    <h3>Com hem-cirklar</h3>
-    <div className="balls"></div>
+    <div className="headers">
+      <h1>Houdini</h1>
+      <h3>Breaking out of the CSS straitjacket</h3>
+    </div>
+
+
 
     <style jsx>{`
       .index {
         background-image: url(static/houdini.jpg);
+        background-size: cover;
+        color: white;
         height: 100%;
       }
 
-      .smooth {
-        background: linear-gradient(deeppink, orangered);
-        -webkit-mask-image: paint(smooth-corners);
-        width: 100px;
-        height: 100px;
+      .headers {
+        position: absolute;
+        bottom: 10%;
+        right: 10%;
+        text-shadow: 2px 2px .5em black;
       }
 
-      .balls {
-        --ball-radius: 20px;
-        --ball-rotation: 0deg;
-        --rotation: 0deg;
-        background: paint(comhem-balls);
-        width: 250px;
-        height: 200px;
-        margin: 1em 0;
-        transition-property: --ball-radius, --ball-rotation, --rotation;
-        transition-duration: .5s;
-        transition-timing-function: ease;
+      h1 {
+        font-size: 9.5vw;
+        margin-bottom: 10px;
       }
-
-      .balls:hover {
-        animation: rotate 1s ease-in-out infinite alternate;
-      }
-
-      @keyframes rotate {
-        from {
-          --rotation: 0deg;
-          --ball-rotation: 0deg;
-        }
-        to {
-          --rotation: 180deg;
-          --ball-rotation: 180deg;
-        }
+      h3 {
+        font-size: 2vw;
+        margin-top: 10px;
       }
     `}</style>
   </div>
