@@ -7,9 +7,6 @@ export default () => (
       <h1>Houdini</h1>
       <h3>Breaking out of the CSS straitjacket</h3>
     </div>
-
-
-
     <style jsx>{`
       .index {
         background-image: url(static/houdini.jpg);

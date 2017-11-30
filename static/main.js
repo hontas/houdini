@@ -16,18 +16,21 @@ CSS.registerProperty({
 
 CSS.registerProperty({
   name: '--tooltip-position',
-  syntax: '<percentage>'
+  syntax: '<percentage>',
+  initialValue: '50%'
 });
 CSS.registerProperty({
   name: '--tooltip-size',
-  syntax: '<length>'
+  syntax: '<length>',
+  initialValue: '20px'
 });
 
-CSS.registerProperty({
-  name: '--image',
-  syntax: '<image>'
-});
+// CSS.registerProperty({
+//   name: '--image',
+//   syntax: '<image>'
+// });
 
 (CSS.paintWorklet || paintWorklet).addModule('static/tooltip.js');
 (CSS.paintWorklet || paintWorklet).addModule('static/comhem-balls.js');
 (CSS.paintWorklet || paintWorklet).addModule('static/smooth-corners.js');
+(CSS.paintWorklet || paintWorklet).addModule('static/imageSkeleton.js');

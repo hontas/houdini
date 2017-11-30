@@ -11,6 +11,18 @@ export default () => (
       <Link href="http://lab.iamvdo.me/houdini/"><a>CSS Houdini Experiments</a></Link>
       <Link href="/paint-worklet"><a>Paint Worklet</a></Link>
     </nav>
+    <style jsx>{`
+    nav {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    a {
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    `}</style>
     <style global jsx>{`
     html {
       box-sizing: border-box;
@@ -50,22 +62,17 @@ export default () => (
       padding: .5em 1em;
     }
 
-    nav {
-      display: flex;
-      justify-content: space-around;
-    }
-
-    a {
-      color: white;
-      font-weight: bold;
-      text-decoration: none;
-    }
-
     blockqoute {
       background-color: whitesmoke;
       border-left: 2px solid red;
       color: #444;
       padding: .3em 1em;
+    }
+
+    .center-content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
     `}</style>
   </header>
