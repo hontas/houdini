@@ -1,4 +1,4 @@
-export default (className) => (
+export default ({ className }) => (
   <div className={className}>
     <h3>Smooth corners</h3>
     <div className="smooth center-content">smooth</div>

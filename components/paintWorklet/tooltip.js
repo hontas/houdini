@@ -1,4 +1,4 @@
-export default (className) => (
+export default ({ className }) => (
   <div className={className}>
     <h3>Tooltip</h3>
     <div className="tooltip">content</div>
@@ -18,6 +18,7 @@ export default (className) => (
         border-image-slice: 0 0 100% 0;
         border-image-width: var(--border-width);
         border-image-outset: var(--border-width);
+        transition: .5s;
         --tooltip-position: 30%;
         --tooltip-size: 30px;
         --border-width: 20px;

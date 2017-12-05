@@ -7,8 +7,9 @@ export default () => (
       <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" />
     </Head>
     <nav>
-      <Link href="/"><a>index</a></Link>
-      <Link href="http://lab.iamvdo.me/houdini/"><a>CSS Houdini Experiments</a></Link>
+      <Link href="/"><a>Index</a></Link>
+      <Link href="/what-is"><a>What is?</a></Link>
+      <Link href="/links"><a>Links</a></Link>
       <Link href="/paint-worklet"><a>Paint Worklet</a></Link>
     </nav>
     <style jsx>{`
@@ -50,10 +51,16 @@ export default () => (
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
       letter-spacing: 0.02em;
+      font-weight: 200;
     }
 
     h1, h2, h3, h4, h5, h6 {
       font-family: 'Lobster', cursive;
+    }
+
+    h1 {
+      font-size: 8vw;
+      margin: .3em 0;
     }
 
     header {

@@ -1,6 +1,6 @@
-export default (className) => (
+export default ({ className }) => (
   <div className={className}>
-    <h3>Tooltip</h3>
+    <h3>Comhem-bollar</h3>
     <div className="balls" />
     <style jsx>{`
       .balls {

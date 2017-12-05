@@ -3,6 +3,7 @@ import Header from '../components/header';
 import SmoothCorners from '../components/paintWorklet/smoothCorners';
 import Tooltip from '../components/paintWorklet/tooltip';
 import ComhemBalls from '../components/paintWorklet/comhemBalls';
+import Pacman from '../components/paintWorklet/pacman';
 
 export default () => (
   <div>
@@ -17,10 +18,14 @@ export default () => (
         <SmoothCorners className="worklets-list__item" />
         <Tooltip className="worklets-list__item" />
         <ComhemBalls className="worklets-list__item" />
+        <Pacman className="worklets-list__item" />
       </div>
 
+      <code>
+        <pre>{`registerPaint('xxx', Class Xxx {})`}</pre>
+      </code>
+
       <ol>
-        <li>{`registerPaint('xxx', Class Xxx {})`}</li>
         <li>paintWorklet.addModule('xxx.js');</li>
         <li>{`CSS.registerProperty({ name: '--xxx' })`}</li>
       </ol>
