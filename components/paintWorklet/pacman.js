@@ -9,7 +9,7 @@ export default ({ className }) => (
       }
       .pacman {
         --pacman-mouth-open: 1;
-        --pacman-mouth-max-open: 25;
+        --pacman-mouth-max-open: 25%;
         background-image: paint(pacman);
         width: 100px;
         height: 100px;
