@@ -25,10 +25,10 @@ export default ({ className }) => (
       }
 
       .tooltip:hover {
-        animation: movaeAround 1s ease-in-out infinite alternate;
+        animation: moveAround 1s ease-in-out infinite alternate;
       }
 
-      @keyframes movaeAround {
+      @keyframes moveAround {
         from {
           --tooltip-position: 15%;
         }
