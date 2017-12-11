@@ -3,6 +3,9 @@ export default ({ className }) => (
     <h3>Pacman</h3>
     <div className="pacman" />
     <style jsx>{`
+      h3 {
+        color: white;
+      }
       .pacman-container {
         background: black;
         padding: 1em;
