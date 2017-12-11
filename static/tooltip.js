@@ -1,4 +1,4 @@
-registerPaint('tooltip', class Bubble {
+registerPaint('tooltip', class {
   static get inputProperties() {
     return [
       'background-color',
